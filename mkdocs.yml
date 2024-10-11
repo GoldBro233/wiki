@@ -37,12 +37,24 @@ theme:
     - search.highlight    #设置搜索高亮
   icon:
     logo: material/brain  #更换站点的主图表和侧栏图表
+    repo: fontawesome/brands/git-alt
   favicon:  https://ih.goldbro.top/goldbro_ico.jpg    #更换站点favico
 
 plugins:
   - rss:
       enabled: false
   - search
+  - git-revision-date-localized:
+      type: timeago #时间类型
+      custom_format: "%d. %B %Y"  # 时间格式
+      timezone: Asia/Shanghai #时区
+      locale: zh #首选语言
+      fallback_to_build_date: false #许回退到git 不可用时mkdocs build执行的时间
+      enable_creation_date: true #是否启用创建时间
+      exclude:  #排除的页面
+          - index.md
+      enabled: true #是否启用
+      strict: true
 
 copyright: >-
   Copyright &copy; 2024 Goldbro233
@@ -62,3 +74,6 @@ extra:
       link: https://github.com/GoldBro233
     - icon: material/email-fast
       link: mailto:admin@goldbro.top
+
+repo_url: https://github.com/GoldBro233/wiki
+repo_name: GoldBro233/wiki
