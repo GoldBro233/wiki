@@ -83,3 +83,11 @@ extra:
 
 repo_url: https://github.com/GoldBro233/wiki
 repo_name: GoldBro233/wiki
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
