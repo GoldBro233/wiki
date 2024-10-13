@@ -38,7 +38,7 @@ theme:
   icon:
     logo: material/brain  #更换站点的主图表和侧栏图表
     repo: fontawesome/brands/git-alt
-  favicon:  https://ih.goldbro.top/goldbro_ico.jpg    #更换站点favico
+  favicon:  https://img.goldbro.top/goldbro_ico.jpg    #更换站点favico
 
 plugins:
   - rss:
