@@ -26,8 +26,8 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   font: 
-    text: LXGW WenKai TC
     code: JetBrains Mono
+  # 修改网页字体
   features:
     - navigation.instant  #即时加载功能
     - navigation.tabs     #上方导航栏
@@ -64,11 +64,12 @@ plugins:
   - git-committers:
       repository: GoldBro233/wiki
       branch: main
+  # 为网页添加commiter注释
 
 copyright: >-
   Copyright &copy; 2024 Goldbro233
   Please Follow CC BY-NC-SA 4.0
-
+# 为网页添加copyright提醒
 
 extra:
   consent:
@@ -78,14 +79,16 @@ extra:
     actions:
       - accept
       - reject
+  # 为网页添加cookie功能
   social: 
     - icon: fontawesome/brands/github
       link: https://github.com/GoldBro233
     - icon: material/email-fast
       link: mailto:admin@goldbro.top
-
+  # 修改网页的联系方式
 repo_url: https://github.com/GoldBro233/wiki
 repo_name: GoldBro233/wiki
+# 为网页添加Github仓库
 
 markdown_extensions:
   - pymdownx.arithmatex:  # 为网页 添加 数学符号支持
@@ -124,3 +127,8 @@ markdown_extensions:
 extra_javascript:
   - javascripts/mathjax.js  # 为网页 添加 数学符号支持
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js  # 为网页 添加 数学符号支持
+
+extra_css:
+  - stylesheets/extra.css
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.css
+  # 修改网页字体css
