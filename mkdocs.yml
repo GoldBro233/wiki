@@ -45,7 +45,7 @@ theme:
   favicon:  https://img.goldbro.top/goldbro_ico.jpg    #更换站点favico
 
 plugins:
-  - rss
+##  - rss
   
   - search
   
