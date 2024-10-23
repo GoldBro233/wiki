@@ -114,7 +114,12 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 # 为网页 添加 关于对于emoji的支持
   - md_in_html
-#为网页 添加 关于对于更好渲染图片的支持
+# 为网页 添加 关于对于更好渲染图片的支持
+  
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+# 为网页添加了对列表的支持 
 
 extra_javascript:
   - javascripts/mathjax.js  # 为网页 添加 数学符号支持
